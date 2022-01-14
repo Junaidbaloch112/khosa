@@ -132,7 +132,33 @@ def main():
 
 	print("\t\033[93;1mJUNAIDKHOSA\x1b[0m")
 
-	print("")
+	print("
+
+                                                      
+
+               HELLO I AM JUNAID KHOSA
+
+      ╔════════════════════════════════════════╗
+
+      ║ AUTHOR      : JUNAID KHOSA            ║
+
+      ║                                        ║
+
+      ║ WARNING     : USE IT YOUR OWN RISK     ║
+
+      ║                                        ║
+
+      ║ TIPS        : USE FIRST NETWORK 4G SIM ║
+
+      ╚════════════════════════════════════════╝  
+
+           
+
+=======================================================
+
+                                 
+
+")
 
 	print("\033[92;1m  [1] START CRACK")
 
