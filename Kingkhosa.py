@@ -62,7 +62,7 @@ except requests.exceptions.ConnectionError:
 	
 ip = requests.get('https://api.ipify.org').text.strip()
 loc = requests.get('https://ipapi.com/ip_api.php?ip=' + ip, headers={'Referer': 'https://ip-api.com/', 'Content-Type': 'application/json; charset=utf-8', 'User-Agent': 'Mozilla/5.0 (Linux; Android 7.1.2; Redmi 4X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.92 Mobile Safari/537.36'}).json()['country_name'].upper()
-def linex(Junaid Khosa Baloch):
+def linex("Junaid Khosa Baloch"):
 	os.system('echo  "\n ======================================\n" | lolcat -a -d 2 -s 50')
 def logo():
 	os.system('echo "\n\n        __  __    _    _   _    _    ____ ___\n JUNAID    \n KHOSA    \n  BALOCH   n       " | lolcat -a -d 2 -s 50')	
