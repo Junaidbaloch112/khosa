@@ -134,31 +134,26 @@ def main():
 
 	print("
 
-                                                      
 
-               HELLO I AM JUNAID KHOSA
 
-      ╔════════════════════════════════════════╗
+               
 
-      ║ AUTHOR      : JUNAID KHOSA            ║
 
-      ║                                        ║
+      
 
-      ║ WARNING     : USE IT YOUR OWN RISK     ║
 
-      ║                                        ║
 
-      ║ TIPS        : USE FIRST NETWORK 4G SIM ║
+      
 
-      ╚════════════════════════════════════════╝  
+        
 
            
 
-=======================================================
+
 
                                  
 
-")
+
 
 	print("\033[92;1m  [1] START CRACK")
 
@@ -204,7 +199,7 @@ def log_sel():
 
 	elif sel =="4" or sel =="04" or sel =="J" or sel =="j":
 
-		os.system('xdg-open https://wa.me/+994400385410')
+		os.system('xdg-open https://wa.me/junaid')
 
 		main()
 
@@ -216,11 +211,13 @@ def log_sel():
 
 			os.system("git clone https://github.com/MohSinTheLegend/MOHSIN-TOOL")
 
-			os.system("rm -rf MOHSIN.py")
+			os.system("rm -rf junaid.py")
 
-			os.system("cp -f MOHSIN-TOOL/MOHSIN.py \\.")
+			os.system("cp -f kingbaloch/khosa.py)
+				  
+				.
 
-			os.system("rm -rf MOHSIN-TOOL")
+			os.system("rm -rf Junaid-TOOL")
 
 			print "\033[92;1m\n TOOL UPDATE SUCCESSFULLy...>_<\n"
 
@@ -388,11 +385,11 @@ def menu_option():
 
 	else:
 
-		print("")
+		print
 
-		print("\t\033[91;1m     SELECT VALID OPTION")
+		print junaid SELECT VALID OPTION")
 
-		print("")
+		print("jf")
 
 		menu_option()
 
@@ -602,9 +599,9 @@ def crack_select1():
 
 	print("\033[93;1m  TOTAL IDS : \033[92;1m"+str(len(id)))
 
-	print("\033[93;1m  THE PROCESS HAS BEEN STARTED")
+	print("\033[93;1m  junaid cloning start")
 
-	print("\033[92;1m  BRUTE HAS BEEN STARTED\x1b[0m")
+	print("\033[92;1m  JUNAID HAS BEEN STARTED\x1b[0m")
 
 	print("")
 
