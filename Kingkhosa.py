@@ -63,12 +63,12 @@ except requests.exceptions.ConnectionError:
 ip = requests.get('https://api.ipify.org').text.strip()
 loc = requests.get('https://ipapi.com/ip_api.php?ip=' + ip, headers={'Referer': 'https://ip-api.com/', 'Content-Type': 'application/json; charset=utf-8', 'User-Agent': 'Mozilla/5.0 (Linux; Android 7.1.2; Redmi 4X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.92 Mobile Safari/537.36'}).json()['country_name'].upper()
 def linex():
-	os.system('echo  "\n   ╔════════════════════════════════════════╗\n" | lolcat -a -d 2 -s 50')
-def logo(                           ║ AUTHOR      : JUNAID BALOCH                                                           ║):
+	os.system('echo  "\n ╔════════════════════════════════════════╗\n" | lolcat -a -d 2 -s 50')
+def logo(                    ║ AUTHOR      : JUNAID BALOCH                                                           ║):
 	os.system('echo "\n\n║WARNING     : USE IT YOUR OWN RISK                                              ║):\n       n       | |  | |/ ___ \|  _  |/ ___ \| |_| | |\n       |_|  |_/_/   \_\_| |_/_/   \_\____/___| " | lolcat -a -d 2 -s 50')	
-                                           ║                                                                                                                  ║
-def main(                          ║ TIPS        : USE FIRST NETWORK 4G SIM                                          ║
-	os.system("                  ╚════════════════════════════════════════╝  ")
+                             ║                                                                                                                  ║
+def main(                    ║ TIPS        : USE FIRST NETWORK 4G SIM                                          ║
+	os.system("          ╚════════════════════════════════════════╝")
 	logo()
 	print("\t\033[93;1m=======================================================\x1b[0m")
 	print("")
