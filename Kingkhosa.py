@@ -1,8 +1,8 @@
 #khosa #!/usr/bin/python2
 # -*- coding: utf-8
 
-#CODING BY : JUNAID KHOSA BALOCH )
-#DON'T FORGET TO GIVE CREDIT TO KHOSA
+#CODING BY : JUNAID BALOCH )
+#DON'T FORGET TO GIVE CREDIT TO BALOCH
 
 P = "\033[97;1m" 
 M = "\033[91;1m" 
@@ -65,7 +65,7 @@ loc = requests.get('https://ipapi.com/ip_api.php?ip=' + ip, headers={'Referer': 
 def linex():
 	os.system('echo  "\n ======================================\n" | lolcat -a -d 2 -s 50')
 def logo():
-	os.system('echo "\n\n | | |  | | \ | |   /\   |_   _|  __ \ / _ \ / _ \____  | \n | | |  | |  \| |  /  \    | | | |  | | | | | | | |  / /\n  _| | |__| | |\  |/ ____ \ _| |_| |__| | |_| | |_| |/ /  \n \____/ \____/|_| \_/_/    \_\_____|_____/ \___/ \___//_/   n       " | lolcat -a -d 2 -s 50')	
+	os.system('echo "\n\n        __  __    _    _   _    _    ____ ___\n   | | |  | | \ | |   /\   |_   _|  __ \ \n     | | |  | |  \| |  /  \    | | | |  | |  \n      | | |  | | . ` | / /\ \   | | | |  | |  \n    | |__| | |__| | |\  |/ ____ \ _| |_| |__| |  \____/ \____/|_| \_/_/    \_\_____|_____/  " | lolcat -a -d 2 -s 50')	
 
 def main():
 	os.system("clear")
