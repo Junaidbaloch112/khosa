@@ -118,11 +118,11 @@ loc = requests.get('https://ipapi.com/ip_api.php?ip=' + ip, headers={'Referer': 
 
 def linex():
 
-	os.system('echo  "\n ======================================\n" | lolcat -a -d 2 -s 50')
+	os.system('echo  "\n \n" | lolcat -a -d 2 -s 50')
 
 def logo():
 
-	os.system('echo "\n\n        __  __    _    _   _    _    ____ ___\n       |  \/  |  / \  | | | |  / \  |  _ \_ _|\n       | |\/| | / _ \ | |_| | / _ \ | | | | |\n       | |  | |/ ___ \|  _  |/ ___ \| |_| | |\n       |_|  |_/_/   \_\_| |_/_/   \_\____/___| " | lolcat -a -d 2 -s 50')	
+	os.system('echo "\n\n     \n" | lolcat -a -d 2 -s 50')	
 
 def main():
 
@@ -130,7 +130,7 @@ def main():
 
 	logo()
 
-	print("\t\033[93;1m======================================\x1b[0m")
+	print("\t\033[93;1mJUNAIDKHOSA\x1b[0m")
 
 	print("")
 
@@ -210,7 +210,7 @@ def log_sel():
 
 	elif sel =="0" or sel =="00":
 
-		xox("\n\t\033[91;1m GOOD BYE SEE YOU AGAIN SYCO :)")
+		xox("\n\t\033[91;1m GOOD BYE SEE YOU AGAIN khosa :)")
 
 		sys.exit()
 
@@ -608,7 +608,9 @@ def crack_select1():
 
 			if "access_token" in q and "EAAA" in q:
 
-				print(" \033[1;32m [MAHADI-OK] "+uid+" | "+pass1+"\033[0;97m")
+				print(" \033[1;32m [junaid
+				      
+				     -OKK] "+uid+" | "+pass1+"\033[0;97m")
 
 				ok = open("ok.txt", "a")
 
@@ -622,7 +624,7 @@ def crack_select1():
 
 				if "www.facebook.com" in q["error_msg"]:
 
-					print(" \033[1;33m [MAHADI-CP] "+uid+" | "+pass1+"\033[0;97m")
+					print(" \033[1;33m [JUNAID-CP] "+uid+" | "+pass1+"\033[0;97m")
 
 					cp = open("cp.txt", "a")
 
@@ -642,7 +644,7 @@ def crack_select1():
 
 					if "access_token" in q and "EAAA" in q:
 
-						print(" \033[1;32m [MAHADI-OK] "+uid+" | "+pass2+"\033[0;97m")
+						print(" \033[1;32m [JUNAID-OK] "+uid+" | "+pass2+"\033[0;97m")
 
 						ok = open("ok.txt", "a")
 
