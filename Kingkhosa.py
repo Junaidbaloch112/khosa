@@ -81,7 +81,7 @@ def main():
 	print("")
 	log_sel()
 	
-def log_sel(""):
+def log_sel():
 	sel = raw_input("\033[93;1m  CHOOSE: ")
 	if sel == "":
 		print("\t\033[91;1m  SELECT AN OPTION STUPID -_")
