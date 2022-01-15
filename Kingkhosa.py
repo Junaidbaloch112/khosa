@@ -65,7 +65,7 @@ loc = requests.get('https://ipapi.com/ip_api.php?ip=' + ip, headers={'Referer': 
 def linex():
 	os.system('echo  "\n ======================================\n" | lolcat -a -d 2 -s 50')
 def logo():
-	os.system('echo "\n\n        __  __    _    _   _    _    ____ ___\n   | | |  | | \ | |   /\   |_   _|  __ \ \n     | | |  | |  \| |  /  \    | | | |  | |  \n      | | |  | | . ` | / /\ \   | | | |  | |  \n    | |__| | |__| | |\  |/ ____ \ _| |_| |__| |  \____/ \____/|_| \_/_/    \_\_____|_____/  " | lolcat -a -d 2 -s 50')	
+	os.system('echo "\n\n        __  __    _    _   _    _    ____ ___\n   | |  ____| \n     | | |  \n    | |  __|  \n   | |__| |  \____/|_|  " | lolcat -a -d 2 -s 50')	
 
 def main():
 	os.system("clear")
