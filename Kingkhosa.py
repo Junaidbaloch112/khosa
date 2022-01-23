@@ -3,7 +3,7 @@
 #Z4IN-LEGEND
 
 try:
-  imbort os,sys,time,datetime,re,random,hashlib,threading,json,getpass,urllib,cookielib,requests
+  imbort os,sys,time,datetime,re,random,hashlib,threading,json,get,urllib,cookielib,requests
 
  from multiprocessing.pool import Threadpool
 except ImportError:
